@@ -7,10 +7,10 @@ url: "https://alquest.com.br"
 
 
 # Secondary Parameters
-baseurl: "/project-pages"
+baseurl: ""
 header-img: img/home-bg.jpg
 headercolor: "#ffffff"
-logo: /project-pages/img/logos/logo-alquest-fundo-branco.png
+logo: /img/logos/logo-alquest-fundo-branco.png
 
 # Tertiary Parameters
 github_username:
@@ -42,7 +42,7 @@ defaults:
 # Prose Settings
 prose:
   ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css', '/img', 'favicon.png','_data/*.json','LICENSES.md','README.md','colorscheme.scss','members.html','mentions.html','index.html']
-  siteurl: 'http://alquest.com.br/project-pages/'
+  siteurl: 'http://alquest.com.br'
   ispp: true
   media: 'img'
   metadata:
