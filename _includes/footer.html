@@ -4,14 +4,16 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+                  {% if site.email %}
+                  <li>
+                      <a href=mailto:{{ site.email }}">
+                          <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a>
+                  </li>
+                  {% endif %}
                     {% if site.twitter_username %}
                     <li>
                         <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -67,11 +69,10 @@
                             </span>
                         </a>
                     </li>
-                    {% endif %}				
+                    {% endif %}
                 </ul>
-                <p class="copyright text-muted"> Copyright © <a href="http://ahmetcecen.github.io/" target="_blank">Ahmet Cecen</a>,  <a href="http://mined.gatech.edu/" target="_blank">MINED@GaTech</a> and <a href="https://github.com/projectpages" target="_blank">Project Pages</a> 2016. </p>
+                <p class="copyright text-muted"> Copyright © <a href="http://alquest.com.br/" target="_blank">Alquest Consultoria</a>, all rights reserved 2019. </p>
             </div>
         </div>
     </div>
 </footer>
-
